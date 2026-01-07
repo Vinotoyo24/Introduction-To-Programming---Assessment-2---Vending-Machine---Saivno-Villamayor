@@ -166,6 +166,7 @@ def AddProducts():
     while True:
         sk = input(f"Enter {pt} ${pr} Stocks : ")
         if sk.isnumeric():
+            sk = int(sk)
             break
         else:
             print("Invalid Stock !")
@@ -180,3 +181,4 @@ def AddProducts():
  # Inilization of The Code <<<
 print("~~~ Vending Machine ~~~ \nEnter O to Order, or Enter A \nto Access Admin Controls\n")
 Start()
+
